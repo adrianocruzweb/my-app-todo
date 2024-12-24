@@ -5,5 +5,12 @@ services:
     build: .
     ports:
       - "3000:3000"
+    environment:
+      - NODE_OPTIONS=--openssl-legacy-provider
+      - WATCHPACK_POLLING=true
     volumes:
       - .:/app
+    working_dir: /app
+    command: 'npm start'
+
+

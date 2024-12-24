@@ -1,0 +1,34 @@
+/* src/components/Kanban.css */
+
+.kanban-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.kanban-column {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    width: 30%; /* Ajuste conforme necessário */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column h3 {
+    text-align: center;
+    color: #495057;
+}
+
+.kanban-card {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espaçamento entre os cartões */
+    padding: 10px;
+    transition: transform 0.2s; /* Efeito de transição ao passar o mouse */
+}
+
+.kanban-card:hover {
+    transform: scale(1.02); /* Aumenta ligeiramente o cartão ao passar o mouse */
+}
