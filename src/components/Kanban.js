@@ -5,10 +5,10 @@ import './Kanban.css'; // Importa o CSS do Kanban
 
 const Kanban = () => {
     const [tasks, setTasks] = useState({
-        todo: [{ id: '1', content: 'Tarefa 1' }],
-        inProgress: [{ id: '2', content: 'Tarefa 2' }],
-        test: [{ id: '2', content: 'Tarefa 3' }],
-        done: [{ id: '3', content: 'Tarefa 4' }],
+        todo: [],
+        inProgress: [],
+        test: [],
+        done: [],
     });
 
     const onDragEnd = (result) => {
